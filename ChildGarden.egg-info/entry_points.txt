@@ -1,0 +1,5 @@
+      [paste.app_factory]
+      main = childgarden:main
+      [console_scripts]
+      initialize_сhildgarden_db = childgarden.scripts.init_dataBase:main
+      

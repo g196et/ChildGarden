@@ -1,0 +1,197 @@
+html{
+	height: 200%;
+	background:#DF90D5 /*url(images/slide_bg.jpg основной фон страницы*/
+}
+body{
+	margin: 0px;
+ }
+
+h1{/*,башкы блок ичинде соз*/
+	font-size: 40px;
+	text-align: center;
+	font-family: cursive;
+	margin-left: 20px;
+	margin-right: 20px;
+	background: url(images/cropped-kolosok_logo.jpg);
+	width: 1300px;
+	height: 150px;
+	border-radius: 15px;
+}
+h2,h3{
+	text-align: center;/*расположение слова стихотворение*/
+	font-family: cursive;
+}
+p{
+	text-indent:50px;/* ќ“—“”ѕџ ќ“ ѕ≈–¬ќ… —“–ќ »(Ќ≈ ∆≈Ћј“ ћ≈Ќя“№ Ќј ЅќЋ№Ў≈≈ “.  ¬—≈ —ƒ»¬ј√ј≈“—я)*/
+  
+ 
+}
+
+
+.links{/*ссылки на литературу*/
+float:left;
+	margin-left: 10px;
+  margin-top: 60px;
+	width: 400px;
+	background:linear-gradient(#65FF63, #EFFC44,#8FFFF5,#32FF81, #F777CE);/* ÷вет фона ——џЋќ  Ќј Ћ»“–≈ј“”–” */
+	border-radius: 40px; /*ќ –”√Ћя≈“ ”√Ћџ */
+width: 320px; /* Ўирина сло¤ ЌјЎ≈√ќ ќЅ№≈ “ј ≈—Ћ» —Ћ»Ў –ћ ЅќЋ№Ўќ…… “ќ –яƒќћ —“ќяў»… ќЅ№≈ “ ѕ≈–≈ћ≈—“»“—я */
+   padding: 5px; /* ѕол¤ вокруг текста */
+    border: 5px ; /* ѕараметры границы */
+color:#BF1D96;/*цвет остального текста*/
+
+  } 
+
+
+.text{    /*осн. стр*/
+	float: left;
+	margin-left: 40px;
+	width: 700px;  /* “ј ∆≈ Ў»–»Ќј —Ћќя*/
+	background:linear-gradient(#8DE7E9, #FBE358);/* цвет основной страницы */
+  border-radius: 40px; /*ќ –”√Ћя≈“ ”√Ћџ */
+	padding: 60px;/*сдвиг основного текста вниз*/
+  margin-top: 40px;/*измен¤ет отступ сверху*/
+color:#BF1D96;/*цвет основного текста*/
+}
+
+.clear{
+	clear:both;
+}
+.login-form{      /*цвет ѕј–ќЋ№  » ¬’ќƒ*/
+font-size:15px;
+width: 90%;
+height:150px;
+background: linear-gradient(#ffff00, #F777CE,#5CC1DC);/* perehod основоного цвета пароль и вход*/
+color: #FF4732;/* цвет основного текста в во входе  и пароль*/
+float:none;
+ border-radius: 20px; /*ќ –”√Ћя≈“ ”√Ћџ */
+padding: 15px;
+ margin-top: 25px;/*измен¤ет отступ сверху*/
+}
+footer{
+	text-align: center;
+	background: #FA404C;  /*url(images/menu2_shape.jpg);*/
+	border-radius: 15px;
+	height: 450px;
+	margin: 20px;
+	width: 1300px;
+}
+
+#works{/*это текст на скачивание че го то в самом внизу и всего 1 строчка*/
+	font-size: 25px;
+	font-family: cursive;   /* курсив заголовков страницы */
+  color:#D2910D;
+}
+.book{
+	text-align: center;
+}
+.pic{
+	float:left;
+  	margin-left:20px;
+}
+img{
+	border-radius: 20px;
+}
+/* начало вспывающего меню  */
+
+ 
+.block1{/*это самый 1 блок про картинку и надпись в самом вверху*/
+width:100%;
+height:200px;
+opacity: 0.7; /*прозрачность*/
+background: url(images/cropped-kolosok_logo.jpg);
+color:#52144B;
+}
+.block2{ /*то же св¤зано с картинкой*/
+
+background-size: 150px auto;/*масштабирует картинку*/
+background-position:10% 0;/*положение картинки */
+background-repeat:no-repeat; /*повторение изображени¤ , отключено*/
+opacity: 3!important;/*прозрачность слова детский сад */
+
+}
+
+.block4/*эн биринчи детский сад деген соз*/
+{text-align:center;
+vertical-align:bottom;
+font-size:60px;
+font-style: italic;
+font-weight: 900;
+font-family:Times New Roman, serif;
+opacity: 1 !important;
+
+}
+
+#tf{/*всплывающее меню*/
+font-size:100px;/*размер шрифта*/
+font-size:17px;/*размер слов в всплывающем окне*/
+width: 100%;
+height:150px;/*длина вспывающего окна*/
+background-image: linear-gradient(to bottom left,# );/*линенйный градиент это плавный переход ,т.к он сам по себе не исп.,то его исп вместе с бэкграунд или бэкграунд имейдж*/
+position: absolute;/*эгерде алып салсак анда баардыгы ылдый тушуп калат*/
+
+
+}
+
+ul.menu {
+background-repeat: no-repeat;
+background-image: linear-gradient(#B43BE4, #16F7CA,#FC75B0);/*цвет градиент на менюшке-------точнее новые цвета*/
+border-radius: 0%;/*скругление углов меню*/
+width: 97%;/*длина меню */
+height: 40px;/*меню удлинн¤етс¤ вниз*/
+}
+
+ul.menu>li {
+float:left;/*алып салсам меню жоголуп кетет*/
+list-style: none;/*алып салсам менюда кара чекиттер пайда болот*/
+border-right: 1px,#F777CE;/*цвет границы т.е рамки,жылдырсан ылдыйкы менюлар тушуп кетет*/
+position: relative;
+}
+
+ul.menu>li>a {
+color: #C42B5E;/*цвет слов менюшки основные слова*/
+display: block;/*меню жылып кетти*/
+padding: 8px 70px 10px;/*чтоб меню ровно распредел¤лось по горизонтали*/
+text-decoration: none;
+border-right: 1px solid #F777CE;/*цвет линий между словами в меню , т.е рамки были черного цвета*/
+}
+
+ul.menu>li>a:hover {
+background-color:  #99A8F9;/*цвет когда наводишь мышкой на главные пункты меню, синий*/
+}
+
+ul.menu>li:first-child>a:hover {
+border-radius: 4px 0 0 14px;
+}
+
+ul.menu>li>ul {
+display: none;
+}
+
+ul.menu>li:hover>ul {
+display: block;/*как должегн показыватьс¤ документ- блочный */
+position: absolute;/*позиционирование элемента относит окна браузера*/
+top: 38px;/*расстон¤ние от верхнего кра¤родит элемнета в данном случае основного меню */
+border-radius: 0 0 4px 4px;/*скругление рамок*/
+background-color:  #33EEFF;/*чуть светлее коктун ону ,мшка менен тийгизгенде, болот*/
+z-index: 1000;
+}
+
+ul.menu>li:hover>ul>li {
+float: left;/*выравнивание элемента ‘Ћќј“*/
+width: 170px;/*менюнун астын туздойбуз */
+list-style: none;
+}
+
+ul.menu>li:hover>ul>li>a {/*фото детей*/
+border-top: 1px solid #F12EE4;  /*лини¤ на меню ,раздел¤юща¤ всплыв.вкладки(кот нах между ними )*/
+padding: 6px 10px 10px;/*10 высота фото детей*/
+display: block;
+text-decoration: none;
+background-color:  #3BFCF6;/*цвет всплыв. вкладок (сами вкладки,синий цвет)*/
+}
+
+ul.menu>li:hover>ul>li>a:hover {
+background-color: transparent;
+color: #F73246;   /*цвет текста в всплывающих вкладках*/
+}

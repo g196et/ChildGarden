@@ -1,0 +1,208 @@
+html{
+	height: 200%;
+	background:#E6FD52 /*url(images/slide_bg.jpg �������� ��� ��������*/
+}
+body{
+	margin: 0px;
+ }
+
+h1{/*,����� ���� ������ ���*/
+	font-size: 40px;
+	text-align: center;
+	font-family: cursive;
+	margin-left: 20px;
+	margin-right: 20px;
+	background: url(images/cropped-kolosok_logo.jpg);
+	width: 1300px;
+	height: 150px;
+	border-radius: 15px;
+}
+h2,h3{
+	text-align: center;
+	font-family: cursive;
+}
+p{
+	text-indent: 20px;/* ������� �� ������ ������(�� ����� ������ �� ������� �.� ��� �����������)*/
+}
+
+.links{/*������ �� ����������*/
+	float:left;
+	margin-left: 10px;
+  margin-top: 60px;
+	width: 400px;
+	background:linear-gradient(#65FF63, #EFFC44,#8FFFF5,#32FF81, #F777CE);/* ���� ���� ������ �� ���������� */
+	border-radius: 40px; /*��������� ���� */
+   width: 320px; /* ������ ���� ������ ������� ���� ������� �������� �� ����� ������� ������ ������������ */
+    padding: 5px; /* ���� ������ ������ */
+    border: 5px ; /* ��������� ������� */
+color:#BF1D96;/*���� ���������� ������*/
+
+   }
+
+
+.text{    /*���. ���*/
+	float: left;
+	margin-left: 40px;
+	width: 700px;  /* ����� ������ ����*/
+	background:linear-gradient(#65FF63, #EFFC44,#8FFFF5,#32FF81, #F777CE);/* ���� �������� �������� */
+  border-radius: 40px; /*��������� ���� */
+	padding: 30px;/*����� ��������� ������ ����*/
+  margin-top: 60px;/*�������� ������ ������*/
+color:#BF1D96;/*���� ��������� ������*/
+}
+.title{
+	color: #FF4732;/*���� ������ ���������� ������*/
+	font-size: 40px;
+  margin-top: 0%;/*�������� ������ ������*/
+    background:linear-gradient(#FF9AFB, #FFF05F,#FF8FE0);/*���� ������ ���������� ������*/
+    border-radius: 20px; /*��������� ���� */
+}
+.story{
+	margin-left: 75px;
+	width: 600px;
+  margin-top: 0%;/*�������� ������ ������*/
+ color: #BF1D96;/*���� ������*/
+  
+}
+
+.clear{
+	clear:both;
+}
+.login-form{      /*���� ������  � ����*/
+font-size:15px;
+width: 90%;
+height:150px;
+background: linear-gradient(#ffff00, #F777CE,#5CC1DC);/* perehod ���������� ����� ������ � ����*/
+color: #FF4732;/* ���� ��������� ������ � �� �����  � ������*/
+float:none;
+ border-radius: 20px; /*��������� ���� */
+padding: 15px;
+ margin-top: 25px;/*�������� ������ ������*/
+}
+footer{
+	text-align: center;
+	background: #F7E37A;  /*url(images/menu2_shape.jpg);*/
+	border-radius: 15px;
+	height: 450px;
+	margin: 20px;
+	width: 1300px;
+}
+
+#works{/*��� ����� �� ���������� �� �� �� � ����� ����� � ����� 1 �������*/
+	font-size: 25px;
+	font-family: cursive;   /* ������ ���������� �������� */
+  color:#D2910D;
+}
+.book{
+	text-align: center;
+}
+.pic{
+	float: left;
+	margin-left: 40px;
+}
+img{
+	border-radius: 20px;
+}
+/* ������ ����������� ����  */
+
+ 
+.block1{/*��� ����� 1 ���� ��� �������� � ������� � ����� ������*/
+width:100%;
+height:200px;
+opacity: 0.7; /*������������*/
+background: url(images/cropped-kolosok_logo.jpg);
+color:#52144B;
+}
+.block2{ /*�� �� ������� � ���������*/
+
+background-size: 150px auto;/*������������ ��������*/
+background-position:10% 0;/*��������� �������� */
+background-repeat:no-repeat; /*���������� ����������� , ���������*/
+opacity: 3!important;/*������������ ����� ������� ��� */
+
+}
+
+.block4/*�� ������� ������� ��� ����� ���*/
+{text-align:center;
+vertical-align:bottom;
+font-size:60px;
+font-style: italic;
+font-weight: 900;
+font-family:Times New Roman, serif;
+opacity: 1 !important;
+
+}
+
+#tf{/*����������� ����*/
+font-size:100px;/*������ ������*/
+font-size:17px;/*������ ���� � ����������� ����*/
+width: 100%;
+height:150px;/*����� ����������� ����*/
+background-image: linear-gradient(to bottom left,# );/*��������� �������� ��� ������� ������� ,�.� �� ��� �� ���� �� ���.,�� ��� ��� ������ � ��������� ��� ��������� ������*/
+position: absolute;/*������ ���� ������ ���� �������� ����� ����� �����*/
+
+
+}
+
+ul.menu {
+background-repeat: no-repeat;
+background-image: linear-gradient(#ffff00, #F777CE,#FC843A);
+border-radius: 0%;/*���������� ����� ����*/
+width: 97%;/*����� ���� */
+height: 40px;/*���� ����������� ����*/
+}
+
+ul.menu>li {
+float:left;/*���� ������ ���� ������� �����*/
+list-style: none;/*���� ������ ������ ���� �������� ����� �����*/
+border-right: 1px,#F777CE;/*���� ������� �.� �����,��������� ������� ������� ����� �����*/
+position: relative;
+}
+
+ul.menu>li>a {
+color: #C42B5E;/*���� ���� ������� �������� �����*/
+display: block;/*���� ����� �����*/
+padding: 10px 70px 10px;/*���� ���� ����� �������������� �� �����������*/
+text-decoration: none;
+border-right: 1px solid #F777CE;/*���� ����� ����� ������� � ���� , �.� ����� ���� ������� �����*/
+}
+
+ul.menu>li>a:hover {
+background-color:  #99A8F9;/*���� ����� �������� ������ �� ������� ������ ����, �����*/
+}
+
+ul.menu>li:first-child>a:hover {
+border-radius: 4px 0 0 14px;
+}
+
+ul.menu>li>ul {
+display: none;
+}
+
+ul.menu>li:hover>ul {
+display: block;/*��� ������� ������������ ��������- ������� */
+position: absolute;/*���������������� �������� ������� ���� ��������*/
+top: 38px;/*����������� �� �������� ��������� �������� � ������ ������ ��������� ���� */
+border-radius: 0 0 4px 4px;/*���������� �����*/
+background-color:  #33EEFF;/*���� ������� ������ ��� ,���� ����� �����������, �����*/
+z-index: 1000;
+}
+
+ul.menu>li:hover>ul>li {
+float: left;/*������������ �������� �����*/
+width: 170px;/*������� ����� ��������� */
+list-style: none;
+}
+
+ul.menu>li:hover>ul>li>a {/*���� �����*/
+border-top: 1px solid #F12EE4;  /*����� �� ���� ,����������� ������.�������(��� ��� ����� ���� )*/
+padding: 6px 10px 10px;/*10 ������ ���� �����*/
+display: block;
+text-decoration: none;
+background-color:  #3BFCF6;/*���� ������. ������� (���� �������,����� ����)*/
+}
+
+ul.menu>li:hover>ul>li>a:hover {
+background-color: transparent;
+color: #F73246;   /*���� ������ � ����������� ��������*/
+}

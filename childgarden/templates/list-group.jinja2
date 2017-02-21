@@ -1,0 +1,23 @@
+{% extends "base.jinja2" %}
+
+{% block head %}
+{{ super() }}
+{% endblock %}
+
+	{% block menu %}
+		{{ super() }}
+	{% endblock %}
+	{% block references %}
+		{{ super() }}
+	{% endblock %}
+	{% block text %}
+		<!--блок с основным текстом-->
+
+		<div class="text">
+			<h2>блок для текста </h2>
+		</div>
+		<div class="clear"></div>
+		{% endblock %}
+{% block footer %}
+	{{ super() }}
+{% endblock %}

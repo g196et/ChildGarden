@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Quick Tutorial: {{name}}</title>
+</head>
+<body>
+<h1>Login</h1>
+<span tal:replace="message"/>
+
+<form class="login-form" action="{{url}}" method="post">
+    <span>Вход в кабинет</span><br><br>
+    <input type="hidden" name="came_from"
+           value="{{came_from}}"/>
+    <input type="text" id="login"
+           name="login"
+           value="{{login}}" 
+           placeholder="Логин"/><br/>
+    <input type="password" id="password"
+           name="password"
+           value="{{password}}"
+           placeholder="Пароль"/><br/>
+    <input type="submit" name="form.submitted"
+           value="Войти"/>
+</form>
+</body>
+</html>

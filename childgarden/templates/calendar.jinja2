@@ -1,0 +1,26 @@
+{% extends "base.jinja2" %}
+
+{% block head %}
+{{ super() }}
+{% endblock %}
+
+{% block menu %}
+	{{ super() }}
+{% endblock %}
+
+{% block references %}
+	{{ super() }}
+{% endblock %}
+
+{% block text %}
+	<div class="text">
+		{% for event in events %}
+			{{event.EventName}}<br>
+		{% endfor %}
+		<a href ="{{request.route_url('addEvent')}}">Добавить мероприятие</a>
+	</div>
+{% endblock %}
+
+{% block footer %}
+	{{ super() }}
+{% endblock %}

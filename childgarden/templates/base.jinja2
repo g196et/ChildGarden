@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+{% block head %}
+    <head>
+        <meta charset="UTF-8">
+        <link href="static/style.css" rel="stylesheet" type="text/css"> <!--соединяем нтмл и цсс -->
+        <title> Детский сад № 311</title>
+        <a id="yakor0"></a>
+    </head>
+{% endblock %}
+    <body>
+    <div class="block1">
+        <div class="block2">
+            <div class="block3">
+                <div class="block4"><br/>Детский сад № 311</div>
+            </div>
+        </div>
+    </div>
+     <!--блок с меню-->
+    {% block menu %}
+        <div id="tf">
+            <ul class="menu">    <!--выпадающее меню -->
+
+            <li><a href="{{request.route_url('home')}}"><mark>Главная</a></li>
+            <li><a href="{{request.route_url('galery')}}">Фотогалерея детей</a></li>
+
+            <li><a href="{{request.route_url('spisok')}}">Список групп   </a>   <!--ссылки наигры --></li>
+            <li><a href="{{request.route_url('calendar')}}">Календарь событий</a>   <!--ссылки на костюмы --></li>
+            <li><a href="{{request.route_url('callback')}}">Обратная связь</a>  <!--ссылки на текстоввые файлы--></li>
+        </div>
+    {% endblock %}
+    <!--блок с ссылками-->
+    {% block references %}
+        <div class="links"><!--класс испол для индивид элемента или задать разные стили для одного тега-->
+        <br><br><br>
+        {% if not view.logged_in %}
+            <a href="{{request.route_url('login')}}">Авторизация</a>
+        {% endif %}
+        {% if view.logged_in %}
+            <a href="/logout">Logout</a>
+        {% endif %}
+        <h3>Ссылки на литературу</h3>
+        <ul>
+            <li><a href="#alenkiy">Аленький цветочек</a></li>
+            <li><a href="#kura">Курочка ряба</a></li>
+            <li><a href="#cvet">Цветик-семицветик</a></li>
+            <li><a href="#duim">Дюймовочка</a></li>
+            <li><a href="#all_books">Полные Книги</a></li>
+        </ul>	
+        </div>
+    {% endblock %}
+    <!--блок с основным текстом-->
+    {% block text %}
+        
+    {% endblock %}
+    <div class="clear"></div>
+    </body>
+    
+<!--подвал с ссылками на скачивание каких то файлов или рисунков из сайта-->
+{% block footer %}
+<footer>
+	<a id="all_books"></a>
+	<p id="works">Вы можете посмотреть данные книги (полные) по следующим ссылкам:</p>
+	<div>
+		<p class="book"><a href="books/Сказки Аксакова - Аленький цветочек.pdf">Аленький цветочек</a><br/>
+			<a href="books/Русские народные сказки - Курочка Ряба.pdf">Курочка ряба</a><br/>
+			<a href="books/Сборник сказок - Цветик-семицветик.pdf">Цветик-семицветик</a><br/>
+			<a href="books/Сказки Андерсена - Дюймовочка.pdf">Дюймовочка</a><br/>
+		</p>
+	</div>
+	<div>
+		<p class="pic"><a href="static/images/pic1.jpg"><img src="static/images/pic1.jpg" height="250" width="250"></p>
+		<p class="pic"><a href="images/pic2.jpg"><img src="static/images/pic2.jpg" height="250" width="250"></p>
+		<p class="pic"><a href="images/pic3.jpg"><img src="static/images/pic3.jpg" height="250" width="250"></p>
+		<p class="pic"><a href="images/pic4.jpg"><img src="static/images/pic4.jpg" height="250" width="250"></p>
+	</div>
+</footer>
+{% endblock %}
+</html>
